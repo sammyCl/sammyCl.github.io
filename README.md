@@ -161,6 +161,11 @@ Start with the sites that have no comments yet, so everyone gets seen, including
 Specific matters here, because "nice site" is pleasant to receive and impossible to act on.
 You will also learn a lot from looking closely at three sites that solved the same problem differently from yours.
 
+## Credits
+
+All portrait and background artwork on this site was generated with ChatGPT.
+All background music and audio was generated with Gemini's Lyria.
+
 ## Ground rules
 
 - **Using Claude Code is the point**, not something you need to disclose or apologize for. This is a course about driving agents well.

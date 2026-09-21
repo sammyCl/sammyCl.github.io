@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phoenixes - The Bestiary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-phoenixes" data-bg-audio="assets/audio/phoenix_background.mp3">
+
+  <header class="site-header">
+    <a class="site-title" href="index.html">The Bestiary</a>
+    <ul class="site-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dragons.html">Dragons</a></li>
+      <li><a href="merpeople.html">Merpeople</a></li>
+      <li><a href="griffins.html">Griffins</a></li>
+      <li><a href="phoenixes.html" aria-current="page">Phoenixes</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+    <button class="audio-toggle" id="audio-toggle" type="button" aria-pressed="false">&#128267; Sound</button>
+  </header>
+
+  <main>
+    <section class="category-intro">
+      <h1>Phoenixes</h1>
+      <p>
+        Phoenixes are the only creatures in the bestiary that die on a
+        fixed schedule, and what each one does with that certainty sets it
+        apart from the rest of its kind. Sun phoenixes burn at their peak
+        and lead in the open. Ash phoenixes linger in what's left after a
+        burning and tend to it. Embers are young phoenixes still working
+        through their first cycle, not yet sure what they'll become.
+        Eclipse phoenixes bank their fire low and show almost nothing
+        until the moment they choose to.
+      </p>
+    </section>
+
+    <section class="creature-stage" id="creature-stage">
+      <div class="creature-grid" id="creature-grid"></div>
+
+      <div class="creature-detail" id="creature-detail">
+        <div class="detail-portrait" id="detail-portrait" aria-hidden="true"></div>
+        <div class="detail-content">
+          <button class="back-link" id="back-to-grid" type="button">&larr; Back to all phoenixes</button>
+          <h2 id="detail-name"></h2>
+          <p class="detail-quick" id="detail-quick"></p>
+          <p class="detail-mbti" id="detail-mbti"></p>
+          <h3 id="lore-heading">Lore</h3>
+          <p id="detail-lore"></p>
+          <h3 id="story-heading">Story</h3>
+          <div id="detail-story"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/phoenixes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,21 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello</title>
+  <title>The Bestiary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-landing" data-bg-audio="assets/audio/landing_page.mp3">
 
-  <h1>Hello, world.</h1>
+  <header class="site-header">
+    <a class="site-title" href="index.html">The Bestiary</a>
+    <ul class="site-nav">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="dragons.html">Dragons</a></li>
+      <li><a href="merpeople.html">Merpeople</a></li>
+      <li><a href="griffins.html">Griffins</a></li>
+      <li><a href="phoenixes.html">Phoenixes</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+    <button class="audio-toggle" id="audio-toggle" type="button" aria-pressed="false">&#128267; Sound</button>
+  </header>
 
-  <p>
-    This page is live. That is the only thing it is here to prove.
-  </p>
+  <main>
+    <section class="hero">
+      <h1>The Bestiary</h1>
+      <p class="tagline">
+        A field guide to the creatures worth knowing about: their kinds,
+        their lore, and the stories of the ones who became known by name.
+      </p>
+    </section>
 
-  <p>
-    Everything about it is yours to delete. Open Claude Code in this folder and
-    tell it what you actually want to build.
-  </p>
+    <section class="category-shelf">
+      <a class="category-card" href="dragons.html" style="--card-accent:#c9a227">
+        <span class="category-name">Dragons</span>
+        <span class="category-blurb">Earth and treasure. Silver, green, red, gold.</span>
+      </a>
+      <a class="category-card" href="merpeople.html" style="--card-accent:#3f7a8c">
+        <span class="category-name">Merpeople</span>
+        <span class="category-blurb">Water and wave. Reef, abyssal, siren-kin, river.</span>
+      </a>
+      <a class="category-card" href="griffins.html" style="--card-accent:#8a97a8">
+        <span class="category-name">Griffins</span>
+        <span class="category-blurb">Sky and wind. Mountain, storm, sand, cloud.</span>
+      </a>
+      <a class="category-card" href="phoenixes.html" style="--card-accent:#c4602f">
+        <span class="category-name">Phoenixes</span>
+        <span class="category-blurb">Fire and ember. Sun, ash, ember, eclipse.</span>
+      </a>
+      <a class="category-card" href="quiz.html" style="--card-accent:#9c7fc4">
+        <span class="category-name">Quiz</span>
+        <span class="category-blurb">Which creature are you? Eight questions, one answer.</span>
+      </a>
+    </section>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 </html>

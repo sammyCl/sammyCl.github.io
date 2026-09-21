@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragons - The Bestiary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dragons" data-bg-audio="assets/audio/dragon_background.mp3">
+
+  <header class="site-header">
+    <a class="site-title" href="index.html">The Bestiary</a>
+    <ul class="site-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dragons.html" aria-current="page">Dragons</a></li>
+      <li><a href="merpeople.html">Merpeople</a></li>
+      <li><a href="griffins.html">Griffins</a></li>
+      <li><a href="phoenixes.html">Phoenixes</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+    <button class="audio-toggle" id="audio-toggle" type="button" aria-pressed="false">&#128267; Sound</button>
+  </header>
+
+  <main>
+    <section class="category-intro">
+      <h1>Dragons</h1>
+      <p>
+        Dragons are the oldest and longest-lived of the named creatures,
+        and the most varied: what a dragon values, and what it will do to
+        protect it, changes almost entirely by kind. Silver dragons keep
+        watch. Green dragons claim territory. Red dragons take what they
+        want. Gold dragons keep score. Meeting one without knowing which
+        kind you are dealing with is the single most common way an
+        otherwise careful traveler does not come home.
+      </p>
+    </section>
+
+    <section class="creature-stage" id="creature-stage">
+      <div class="creature-grid" id="creature-grid"></div>
+
+      <div class="creature-detail" id="creature-detail">
+        <div class="detail-portrait" id="detail-portrait" aria-hidden="true"></div>
+        <div class="detail-content">
+          <button class="back-link" id="back-to-grid" type="button">&larr; Back to all dragons</button>
+          <h2 id="detail-name"></h2>
+          <p class="detail-quick" id="detail-quick"></p>
+          <p class="detail-mbti" id="detail-mbti"></p>
+          <h3 id="lore-heading">Lore</h3>
+          <p id="detail-lore"></p>
+          <h3 id="story-heading">Story</h3>
+          <div id="detail-story"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/dragons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

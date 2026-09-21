@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Griffins - The Bestiary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-griffins" data-bg-audio="assets/audio/griffin_background.mp3">
+
+  <header class="site-header">
+    <a class="site-title" href="index.html">The Bestiary</a>
+    <ul class="site-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dragons.html">Dragons</a></li>
+      <li><a href="merpeople.html">Merpeople</a></li>
+      <li><a href="griffins.html" aria-current="page">Griffins</a></li>
+      <li><a href="phoenixes.html">Phoenixes</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+    <button class="audio-toggle" id="audio-toggle" type="button" aria-pressed="false">&#128267; Sound</button>
+  </header>
+
+  <main>
+    <section class="category-intro">
+      <h1>Griffins</h1>
+      <p>
+        Griffins are creatures of altitude, and the four kinds keep almost
+        nothing in common except the sky itself: each has claimed a
+        different slice of it and built a whole way of life around holding
+        that slice. Mountain griffins nest on a single peak for generations
+        and rarely leave it. Storm griffins ride the front of a coming
+        storm rather than shelter from it. Sand griffins range the open
+        desert on thermals rising off bare rock. Cloud griffins keep to
+        altitudes where few others can follow, and are rarely seen from
+        the ground at all. Knowing which sky you are standing under is the
+        first thing to learn before meeting one.
+      </p>
+    </section>
+
+    <section class="creature-stage" id="creature-stage">
+      <div class="creature-grid" id="creature-grid"></div>
+
+      <div class="creature-detail" id="creature-detail">
+        <div class="detail-portrait" id="detail-portrait" aria-hidden="true"></div>
+        <div class="detail-content">
+          <button class="back-link" id="back-to-grid" type="button">&larr; Back to all griffins</button>
+          <h2 id="detail-name"></h2>
+          <p class="detail-quick" id="detail-quick"></p>
+          <p class="detail-mbti" id="detail-mbti"></p>
+          <h3 id="lore-heading">Lore</h3>
+          <p id="detail-lore"></p>
+          <h3 id="story-heading">Story</h3>
+          <div id="detail-story"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/griffins.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
