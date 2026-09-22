@@ -538,19 +538,20 @@ a.category-card:hover {
   border: 1px solid #8a3a1c;
 }
 
-/* Quiz theme: no fixed element, so no background image, just a distinct
-   accent layered on the dark base */
+/* Quiz theme: same background and music as the landing page, with its own
+   accent layered on top */
 
 .theme-quiz {
   --color-accent: #9c7fc4;
   --panel-bg: rgba(18, 14, 22, 0.85);
   background:
-    linear-gradient(180deg, rgba(14, 10, 18, 0.6), rgba(14, 10, 18, 0.9)),
-    var(--color-bg);
+    linear-gradient(180deg, rgba(10, 8, 14, 0.55), rgba(10, 8, 14, 0.85)) center / cover no-repeat,
+    url("assets/backgrounds/landing_page.png") center / cover no-repeat fixed;
+  background-color: var(--color-bg);
 }
 
 .theme-quiz .site-header {
-  background: rgba(14, 10, 18, 0.5);
+  background: rgba(10, 8, 14, 0.5);
   backdrop-filter: blur(2px);
 }
 
